@@ -10,59 +10,68 @@
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <img class="header_logo" src="./assets/images/imagen150x75.svg" alt="Logo del blog"/>
+      <h1 class="header__title">Título del blog</h1>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+    <main class="main">
+      <section class="posts">
+        <article class="post oveja">
+          <h2 class="post__title">Titulo del post 1</h2>
+          <p class="post__text">
+            Contenido 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus! Commodi tenetur excepturi, doloribus,
+          mollitia amet fugiat esse a error et eos laboriosam numquam qui praesentium incidunt voluptas quibusdam cupiditate!
+          </p>
+        </article>
 
-          </li>
-        </ul>
-      </main>
+        <article class="post oveja">
+          <h2 class="post__title">Titulo del post 2</h2>
+          <p class="post__text">
+            Oveja!!
+          </p>
+        </article>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <article class="post oveja">
+          <h2 class="post__title">Titulo del post 3</h2>
+          <p class="post__text">
+            Contenido 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus! Commodi tenetur excepturi, doloribus,
+          mollitia amet fugiat esse a error et eos laboriosam numquam qui praesentium incidunt voluptas quibusdam cupiditate!
+          </p>
+        </article>
 
-        </small>
-      </footer>
+      </section>
+      <div class="col-2">
+        <section class="author">
+          <img class="author__image" src="https://placehold.co/150x150" alt="Imagen del autor" />
+          <h2>Autor</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellendus! Commodi tenetur excepturi, doloribus,
+          mollitia amet fugiat esse a error et eos laboriosam numquam qui praesentium incidunt voluptas quibusdam cupiditate!</p>
+        </section>
+        <nav class="menu">
+          <ul class="links__list">
+            <li><a href="">Sección 1</a></li>
+            <li><a href="">Sección 2</a></li>
+            <li><a href="">Sección 3</a></li>
+            <li><a href="">Sección 4</a></li>
+            <li><a href="">Sección 5</a></li>
+          </ul>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+          <ul class="links__list">
+            <li><a href="">Categoría 1</a></li>
+            <li><a href="">Categoría 2</a></li>
+            <li><a href="">Categoría 3</a></li>
+            <li><a href="">Categoría 4</a></li>
+            <li><a href="">Categoría 5</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2023 - Título del blog
+    </footer>
   </body>
 </html>
